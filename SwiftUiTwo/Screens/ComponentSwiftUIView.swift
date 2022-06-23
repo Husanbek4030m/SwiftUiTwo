@@ -9,6 +9,14 @@ import SwiftUI
 
 struct ComponentSwiftUIView: View {
     @State var txtField = "Husan"
+    @State var isHas = true
+    @State var dateToday = Date()
+    
+    var dateRange: ClosedRange<Date> {
+        let min = Calendar.current.date(byAdding: .day, value: -5, to: Date())!
+        let max = Calendar.current.date(byAdding: .day, value: 5, to: Date())!
+        return min...max
+    }
     var body: some View {
         ScrollView {
             VStack {
@@ -36,8 +44,21 @@ struct ComponentSwiftUIView: View {
                     Image(systemName: "globe")
                     Text("Click Me")
                 }
-                    
                 
+                Link(destination: URL(string: "https://pdp.uz")!) {
+                    Text("pdp.uz")
+                }
+                
+                
+                Toggle(isOn: $isHas) {
+                    Text("Rozimisiz")
+                }.padding()
+                    
+                DatePicker("Vaqtni tanlang",
+                           selection: $dateToday,
+                           in: dateRange, //...Date(), //Date()... ||
+                           displayedComponents: .date)
+                    .padding()
             }
         }
     }
@@ -48,3 +69,5 @@ struct ComponentSwiftUIView_Previews: PreviewProvider {
         ComponentSwiftUIView()
     }
 }
+
+
