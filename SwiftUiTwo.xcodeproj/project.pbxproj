@@ -17,6 +17,7 @@
 		8DE54D98286362AC006FABF3 /* SwiftUiTwoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE54D97286362AC006FABF3 /* SwiftUiTwoUITestsLaunchTests.swift */; };
 		8DE54DA6286362C7006FABF3 /* HomeSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE54DA5286362C7006FABF3 /* HomeSwiftUIView.swift */; };
 		8DE54DA8286444BA006FABF3 /* MapSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE54DA7286444BA006FABF3 /* MapSwiftUIView.swift */; };
+		8DE54DAA286448CA006FABF3 /* ComponentSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE54DA9286448CA006FABF3 /* ComponentSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		8DE54D97286362AC006FABF3 /* SwiftUiTwoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiTwoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8DE54DA5286362C7006FABF3 /* HomeSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSwiftUIView.swift; sourceTree = "<group>"; };
 		8DE54DA7286444BA006FABF3 /* MapSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftUIView.swift; sourceTree = "<group>"; };
+		8DE54DA9286448CA006FABF3 /* ComponentSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				8DE54DA5286362C7006FABF3 /* HomeSwiftUIView.swift */,
 				8DE54DA7286444BA006FABF3 /* MapSwiftUIView.swift */,
+				8DE54DA9286448CA006FABF3 /* ComponentSwiftUIView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				8DE54D82286362AB006FABF3 /* SwiftUiTwo.xcdatamodeld in Sources */,
 				8DE54DA8286444BA006FABF3 /* MapSwiftUIView.swift in Sources */,
+				8DE54DAA286448CA006FABF3 /* ComponentSwiftUIView.swift in Sources */,
 				8DE54D7F286362AB006FABF3 /* Persistence.swift in Sources */,
 				8DE54DA6286362C7006FABF3 /* HomeSwiftUIView.swift in Sources */,
 				8DE54D76286362AB006FABF3 /* SwiftUiTwoApp.swift in Sources */,

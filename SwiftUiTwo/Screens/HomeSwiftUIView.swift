@@ -12,9 +12,9 @@ struct HomeSwiftUIView: View {
     
     var body: some View {
         NavigationView {
-            Text("Mannonov Husan")
-                .foregroundColor(.blue)
-                .toolbar {
+                Text("Mannonov Husan")
+                    .foregroundColor(.blue)
+            .toolbar {
                     ToolbarItem(placement: .principal) {
                         Text("Bosh sahifa")
                     }
@@ -26,8 +26,8 @@ struct HomeSwiftUIView: View {
                             }
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            
+                        NavigationLink {
+                            ComponentSwiftUIView()
                         } label: {
                             Image(systemName: "bell")
                         }
