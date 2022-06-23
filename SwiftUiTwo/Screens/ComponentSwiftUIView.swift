@@ -11,6 +11,9 @@ struct ComponentSwiftUIView: View {
     @State var txtField = "Husan"
     @State var isHas = true
     @State var dateToday = Date()
+    @State private var progres = 0.5
+    
+    @State var cnt:Int = 0
     
     var dateRange: ClosedRange<Date> {
         let min = Calendar.current.date(byAdding: .day, value: -5, to: Date())!
@@ -59,6 +62,18 @@ struct ComponentSwiftUIView: View {
                            in: dateRange, //...Date(), //Date()... ||
                            displayedComponents: .date)
                     .padding()
+                
+                
+                ProgressView(value: progres)
+                    .padding()
+                
+                ProgressView(value: progres)
+                    .progressViewStyle(CircularProgressViewStyle())
+                
+//                Stepper(value: $cnt, in: 1...10, step: 1, label: {
+//                    Text("son \(cnt)")
+//                })
+
             }
         }
     }
